@@ -41,8 +41,11 @@
         nav {
             background-color: rgba(18, 18, 18, 0.9);
             padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
         }
-
+      
         nav ul {
             list-style: none;
             display: flex;
@@ -87,6 +90,7 @@
             opacity: 0;
             transform: translateY(50px);
             animation: fadeInUp 0.8s ease forwards;
+            scroll-margin-top: 200px;
         }
 
         .section:hover {
@@ -102,12 +106,13 @@
         }
 
         .cta-button {
-            background-color: #121212;
+            background-color: #d3d3d3;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 40px;
+            margin-right: 50px;
             text-align: center;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 28px;
             border-radius: 5px;
             display: inline-block;
             transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -189,7 +194,7 @@
     <!-- About Section -->
     <div id="about" class="section">
         <h2>About Me</h2>
-        <p>Hello! I'm Maryam, a passionate Data Analyst and Data Scientist. I specialize in turning raw data into meaningful insights using tools like Python, R, SQL and Power BI. My goal is to help businesses make data-driven decisions that improve efficiency and profitability.</p>
+        <p>Hello! I'm Maryam, a passionate Data Analyst and Data Scientist. I specialize in turning raw data into meaningful insights using tools like Python, R, SQL and Power BI. My goal is to help businesses make better decisions that improve efficiency and profitability.</p>
     </div>
 
     <!-- Projects Section -->
@@ -201,7 +206,7 @@
             <img src="https://raw.githubusercontent.com/maryam9292/Data-Analytics-and-Data-Science/main/images/Sales forecastCARS.jpg" alt="Sales Forecast Visualization" class="project-img">
             <div class="project-details">
                 <h3><a href="https://github.com/maryam9292/Data-Analytics-and-Data-Science/blob/main/Sales_Forecast.ipynb" target="_blank">Data Analysis Project - Sales Forecast</a></h3>
-                <p>Forecasted sales trends using time-series analysis with Python, providing actionable insights for inventory management and sales strategy optimization.</p>
+                <p>Predicted the amount a customer is likely to spend on purchasing a car using TensorFlow, providing actionable insights for sales strategy optimization and customer satisfaction. The model can be highly useful for the sales team to estimate the amount a person can spend on a car, consequently recommending car options within the estimated spending range</p>
             </div>
         </div>
 
@@ -228,7 +233,17 @@
     <div id="contact" class="section">
         <h2>Contact</h2>
         <p>Contact me for freelance data analysis, machine learning projects, or consultations!</p>
-        <a href="mailto:maryamaslam9292@gmail.com" class="cta-button">Get in Touch</a>
+        <a href="mailto:maryamaslam9292@gmail.com" class="cta-button">
+        <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" style="width: 24px; vertical-align: middle;">
+        </a>
+
+<!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/maryamaslam9292/" class="cta-button" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" style="width: 24px; vertical-align: middle;">
+        </a>
+        <a href="https://www.github.com/Maryam9292/Data-Analytics-and-Data-Science" class="cta-button" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="LinkedIn" style="width: 24px; vertical-align: middle;">
+        </a>
     </div>
 </div>
 
